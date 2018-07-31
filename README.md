@@ -1,3 +1,10 @@
+GO TO public/src/Form.js to see the HTML for the form.
+GO TO public/src/Form.css to see the CSS for the form.
+
+<!-- 
+CREATE REACT APP
+--------------------------------->
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
