@@ -1,6 +1,4 @@
-
-
-/* Normal Styles */
+/* Form Styles */
 
 .form {
     position: relative;
@@ -11,19 +9,14 @@
     height: 90vh;
     min-height: calc(50vw + 380px);
     max-height: 764px;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+    
 }
 .form-title {
     text-align: center;
     margin: 0 auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
     padding: 20px;
     font-size: 1.6rem;
-    border-radius: 10px 10px 0 0;
+    
 }
 .form-content {
     text-align: center;
@@ -33,17 +26,21 @@
     display: block;
 }
 .input-text {
+    border-style: none;
     margin: 0 auto;
-    font-size: 0.8rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;  
     width: 90%;
     border-radius: 10px;
     padding: 5px;
-    opacity: 0.4;
 }
-.input-text:active, .input-text:focus {
-    opacity: 1;
-
+.input-text:active, .input-text:fpcus {
+    border: none;
+    border-style: none;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    width: 90%;
+    border-radius: 10px;
+    padding: 5px;
 }
 #text-area {
     height: calc(40vh - 150px);
@@ -56,8 +53,7 @@
     justify-content: space-around;
     margin: 0 auto;
     padding: 20px 40px;
-}
-   
+}  
 .button-item {
     width: 100%;
     margin: 0 auto;
@@ -88,8 +84,6 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
     font-size: 1rem;
     font-weight: bolder;
     border: none;
@@ -181,48 +175,9 @@
     #submit:hover {
         transform: scale(1.05);
     }
-    
-   
+    #submit:active, #submit:focus {
+        transform: scale(1.0);
+    }
 }
 
 
-/* colors style */
-body {
-    background: #393D3F;
-    /* from: http://lea.verou.me/css3patterns/#weave */
-    background:
-    linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-    linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-    background-color:#708090;
-    background-size: 64px 128px;
-}
-
-.form {
-background: #B2CEDE;
-background: linear-gradient(180deg, rgba(178,206,222,0.5) 0% , rgba(63,124,172,0.8) 100%);
-}
-.form-title {
-color: white;
-background: rgba(63,124,172,0.5);
-}
-
-.form-content {
-color: white;
-}
-.form-text {
-background: none;
-}
-#submit {
-    color: #fff;
-    background: none;
-    border: 1px solid #fff;
-}
-#submit:active, #submit:focus {
-    color: #3F7CAC;
-    background: #fff;
-    border: 1px solid #fff;
-}
-.input-text {
-    color: #ffffff;
-    font-weight: bold;
-}

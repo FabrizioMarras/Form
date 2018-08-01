@@ -1,0 +1,97 @@
+/* COLORS SHEET*/
+
+/* BACKGROUND */
+    body {
+        background: #708090;
+        /* from: http://lea.verou.me/css3patterns/#weave */
+        background:
+        linear-gradient(135deg, 
+                #708090 22px,
+                #d9ecff 22px, 
+                #d9ecff 24px, 
+                transparent 24px, 
+                transparent 67px,
+                #d9ecff 67px, 
+                #d9ecff 69px, 
+                transparent 69px),
+        linear-gradient(225deg, 
+                #708090 22px, 
+                #d9ecff 22px, 
+                #d9ecff 24px, 
+                transparent 24px,
+                transparent 67px,
+                #d9ecff 67px,
+                #d9ecff 69px, 
+                transparent 69px) 0 64px;
+        background-color:#708090;
+        background-size: 64px 128px;
+    }
+
+/* FORM BACKGROUND */
+    .form {
+        /* Styles */
+        border-radius: 10px;
+            /* shadow */
+            -webkit-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+        /* Colors */
+        color: #fff;
+        background: #B2CEDE;
+        background: linear-gradient(180deg, 
+                        rgba(178,206,222,0.5) 0% , 
+                        rgba(63,124,172,0.8) 100%);
+                        
+    }
+
+/* FORM TITLE AREA*/
+    .form-title {
+        /* Styles */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        border-radius: 10px 10px 0 0;
+        /* Colors */
+        color: white; /* Text Color */
+        background: rgba(63,124,172,0.5); /* Background Box Color */
+    }
+
+/* FORM INPUT TEXT and BACKGROUND*/
+    .input-text {
+        /* Styles */
+        font-family: 'Courier New', Courier, monospayce;
+        border: 1px solid rgba(255,255,255,0.5);
+        /* Colors */
+        color: grey;
+        background: rgba(178,206,222,0.4);
+    }
+    .input-text:active, .input-text:focus {
+        /* Styles */
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        /* Colors */
+        color:grey;
+        background: rgba(178,206,222,0.8);
+    }
+
+/* SUBMIT BUTTON */
+    #submit {
+        /* Styles */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        /* Colors */
+        color: #fff;
+        background: none;
+    }
+    /* Hover State */
+        #submit:hover {
+        background: rgba(63,124,172,0.5);
+        }
+    /* Active or when focus with tab */
+        #submit:active, #submit:focus {
+            /* Styles */
+            border: 1px solid #fff;
+            /* Colors */
+            color: #3F7CAC;
+            background: rgba(255,255,255,0.7);
+        }
