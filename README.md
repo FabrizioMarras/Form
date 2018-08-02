@@ -2,7 +2,6 @@
 README BEFORE USING THE FILE:
 
 GO TO public/src/Style_me_please.css to modify the style of the form.<br>
-***At the end of the Form.css are the tools for changing ther CSS colors.<br>
 
 Form.js and Form.css to see the HTML and CSS code for the form.<br>
 
