@@ -11,12 +11,19 @@ class Form extends Component {
   constructor(props) {
       super(props)
       this.state = { 
-        form: []       
+        // form: ''       
       }
+      this.updateState = this.updateState.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
   };
  
+updateState(e) {
 
+    this.setState ({
+      [e.target.name]: e.target.value
+    })
+  
+}
 
   handleSubmit(event) {
     console.log('A form was submitted', this.state);
@@ -29,25 +36,27 @@ class Form extends Component {
         <div className="form">
         <h1 className="form-title">Form Title</h1>
         <form onSubmit={this.handleSubmit}>
-          {/* error in the console when try to nest <li> elements. 
-          A series of divs are used instead - suggestion: look up React documentation 
-          and solve this issues with nested <li> */}
+         
           <div className="form-content">
             <div className="form-flex">
               <div className="flex-item text">
                 
-                  <TextInputField  />
+                  <TextInputField  myFormProp = {this.state.name} 
+               updateStateProp = {this.updateState}/>
 
-                  <TextareaField />
+                  <TextareaField myFormProp = {this.state.message} 
+               updateStateProp = {this.updateState}/>
                 
                 
               </div>
               <div className="flex-item button">
                 <div className="button-flex">
                   
-                  <RadioButtonGroupField />
+                  <RadioButtonGroupField myFormProp = {this.state.radio} 
+               updateStateProp = {this.updateState}/>
 
-                  <CheckboxGroupField />
+                  <CheckboxGroupField myFormProp = {this.state.checkbox} 
+               updateStateProp = {this.updateState}/>
                
               </div>
               </div> 
