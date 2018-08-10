@@ -26,7 +26,8 @@ updateState(e) {
 }
 
   handleSubmit(event) {
-    console.log('A form was submitted', this.state);
+    var form = this.state
+    console.log('A form was submitted', form);
     event.preventDefault();
 
   };
@@ -41,23 +42,37 @@ updateState(e) {
             <div className="form-flex">
               <div className="flex-item text">
                 
-                  <TextInputField  myFormProp = {this.state.name} 
-               updateStateProp = {this.updateState}/>
+                  <TextInputField   labelProp = {"Name"}
+                                    // myFormProp = {this.state.name} 
+                                    updateStateProp = {this.updateState}/>
 
-                  <TextareaField myFormProp = {this.state.message} 
-               updateStateProp = {this.updateState}/>
+                  <TextareaField  labelProp = {"Message"}
+                                  // myFormProp = {this.state.message} 
+                                  updateStateProp = {this.updateState}/>
                 
                 
               </div>
               <div className="flex-item button">
                 <div className="button-flex">
+                {/* Title for the Radio Button Section: */}
                   
-                  <RadioButtonGroupField myFormProp = {this.state.radio} 
-               updateStateProp = {this.updateState}/>
-
-                  <CheckboxGroupField myFormProp = {this.state.checkbox} 
-               updateStateProp = {this.updateState}/>
-               
+                  <div className="button-item">
+                    <RadioButtonGroupField  labelProp={"Radio A"} 
+                                            radioTitleProp={"Radio Title"}
+                                            // myFormProp = {this.state.radio} 
+                                            updateStateProp = {this.updateState}/>
+                    <RadioButtonGroupField  labelProp={"Radio B"} 
+                                            // myFormProp = {this.state.radio} 
+                                            updateStateProp = {this.updateState}/>
+                  </div>
+                  <div className="button-item">
+                    <CheckboxGroupField   labelProp={"Checkbox A"} 
+                                          // myFormProp = {this.state.checkbox} 
+                                          updateStateProp = {this.updateState}/>
+                    <CheckboxGroupField   labelProp={"Checkbox B"}
+                                          // myFormProp = {this.state.checkbox} 
+                                          updateStateProp = {this.updateState}/>
+               </div>
               </div>
               </div> 
             </div>

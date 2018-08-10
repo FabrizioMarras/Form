@@ -24,27 +24,17 @@ class RadioButtonGroupField extends Component {
 
     render() {
         return (
-        <div className="button-item">
+       
             <div className="radio-box">
             <input  id="radio-01" 
                     type="radio" 
-                    name="radio" 
-                    value={this.props.myFormProp}
+                    name={this.props.radioTitleProp}
+                    value={this.props.labelProp}
                     onChange={this.props.updateStateProp}
                     />
-            <label className="button-text" htmlFor="radio-01">Radio A</label>
+            <label className="button-text" htmlFor="radio-01">{this.props.labelProp}</label>
           </div>
-          <div className="radio-box">
-            <input  id="radio-02" 
-                    type="radio" 
-                    name="radio"
-                    value={this.props.myFormProp}
-                    onChange={this.props.updateStateProp}
-                    />
-            <label className="button-text" 
-            htmlFor="radio-02">Radio B</label>
-            </div>
-        </div>
+      
         )
     }
 }

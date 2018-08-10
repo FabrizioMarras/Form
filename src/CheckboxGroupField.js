@@ -25,25 +25,18 @@ class CheckboxGroupField extends Component {
     render() {
         return (
         
-        <div className="button-item">
+        
             <div className="check-box">
-              <input  id="checkbox-01" 
+              <input  id="checkbox" 
                       type="checkbox" 
-                      name="checkboxA" 
-                      value={this.props.myFormProp}
+                      name="checkbox" 
+                      value={this.props.labelProp}
                       onChange={this.props.updateStateProp}/>
               <label className="button-text" 
-              htmlFor="checkbox-01">Checkbox A</label>
+              htmlFor="checkbox">{this.props.labelProp}</label>
             </div>
-            <div className="check-box">
-              <input  id="checkbox-02" 
-                      type="checkbox" 
-                      name="checkboxB" 
-                      value={this.props.myFormProp}
-                      onChange={this.props.updateStateProp}/>
-              <label className="button-text" htmlFor="checkbox-02">Checkbox B</label>
-            </div>
-        </div>
+            
+        
 
         )
     }

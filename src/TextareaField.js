@@ -24,10 +24,10 @@ class TextareaField extends Component {
         return (
         
             <div>
-            <label  className="label-text" htmlFor="text-area">Message</label>
+            <label  className="label-text" htmlFor="text-area">{this.props.labelProp}</label>
             <textarea className="input-text" 
                       id="text-area" 
-                      name="message"
+                      name={this.props.labelProp}
                       value={this.props.myFormProp}
                       placeholder="Your Message"
                       onChange={this.props.updateStateProp}>

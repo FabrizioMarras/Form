@@ -25,12 +25,12 @@ class TextInputField extends Component {
         <div>
             <label  className="label-text" 
                     htmlFor="input-text">
-              Name
+              {this.props.labelProp}
             </label>
             <input  className="input-text" 
                     id="input-text" 
-                    name="name" 
-                    value={this.props.myFormProp}
+                    name={this.props.labelProp}
+                    // value={this.props.myFormProp}
                     placeholder="Your Name" 
                     onChange={this.props.updateStateProp}>
             </input>
