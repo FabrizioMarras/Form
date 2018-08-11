@@ -29,7 +29,7 @@ class CheckboxGroupField extends Component {
             <div className="check-box">
               <input  id="checkbox" 
                       type="checkbox" 
-                      name="checkbox" 
+                      name={this.props.nameProp} 
                       value={this.props.labelProp}
                       onChange={this.props.updateStateProp}/>
               <label className="button-text" 

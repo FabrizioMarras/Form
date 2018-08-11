@@ -28,7 +28,7 @@ class RadioButtonGroupField extends Component {
             <div className="radio-box">
             <input  id="radio-01" 
                     type="radio" 
-                    name={this.props.radioTitleProp}
+                    name={this.props.nameProp}
                     value={this.props.labelProp}
                     onChange={this.props.updateStateProp}
                     />

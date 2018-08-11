@@ -3,7 +3,22 @@ README BEFORE USING THE FILE:
 
 GO TO public/src/Style_me_please.css to modify the style of the form.<br>
 
-Form.js and Form.css to see the HTML and CSS code for the form.<br>
+Commits List: 
+
+After the first set of commits to set up the form in Form.js, the Form component has been modified:
+
+1.  Title: Adding a subcomponent structure to the Form - No returning values yet.
+    commit: be691e479ac0901fd646e2f2f1703761a67f39bc
+In this commit the form component is split in form subcomponents (radio buttons and checkbox still as a separate group) - no Javascript logs yet.
+
+2.  Title: on Submit -> inputText and TextArea log to the console.
+    commit 457f1b60d09e66a7adf886e27375a824ca6b88b8
+In this commit the form components InputTextField and AreaTextField log to the console after submitting the form clicking submit button.
+
+3.  Title: on Submit -> +RadioButtonLabel log to the console; Dynamic comp added
+    commit d2f757a6f36e9b40273344e0825868d107baccc3
+In this commit the radio button and each checkbox are made single elements subcomponents, and they can be added to the form by adding each respective subcomponent to the form depending on how many radio buttons and checkboxes are needed. Dynimicity is added to each subcomponent.
+Still need to make the log of the checkbox into an array [checkbox01, checkbox02, ...]
 
 CREATE REACT APP
 --------------------------------->
